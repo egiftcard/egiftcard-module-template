@@ -1,17 +1,16 @@
 {
   "compilerOptions": {
-    "moduleResolution": "Node",
-    "declaration": true,
-    "module": "ES6",
-    "sourceMap": true,
+    "esModuleInterop": true,
+    "exactOptionalPropertyTypes": true,
+    "forceConsistentCasingInFileNames": true,
+    "lib": ["ES2020"],
+    "module": "CommonJS",
+    "moduleResolution": "node",
+    "noEmit": true,
+    "noErrorTruncation": true,
+    "noUncheckedIndexedAccess": true,
     "strict": true,
-    "target": "es5",
-    "lib": [
-      "DOM",
-      "ES2016"
-    ]
+    "target": "es2020"
   },
-  "include": [
-    "./**/*.ts"
-  ]
+  "exclude": ["./dist", "**/node_modules"]
 }
